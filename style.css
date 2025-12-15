@@ -218,7 +218,7 @@ a{color:inherit;text-decoration:none}
 }
 
 .section{
-  padding:72px 0;
+  padding:64px 0;
   border-top:1px solid var(--line);
   background: linear-gradient(to bottom, rgba(255,255,255,.02), transparent 60%);
 }
@@ -245,6 +245,27 @@ a{color:inherit;text-decoration:none}
   border-radius:var(--radius);
   padding:18px;
 }
+
+<section class="section section-bridge">
+  <div class="container">
+    <p class="bridge-line">
+      Modern fades, clean beards, and sharp lineups. Built for the district.
+    </p>
+  </div>
+</section>
+.section-bridge{
+  padding:42px 0;
+  border-top:1px solid var(--line);
+  background:rgba(255,255,255,.02);
+}
+
+.bridge-line{
+  max-width:70ch;
+  font-size:16px;
+  color:var(--muted);
+  letter-spacing:.02em;
+}
+
 
 .team-grid{
   grid-template-columns: repeat(3, 1fr);
