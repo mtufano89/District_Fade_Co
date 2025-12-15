@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>District Fade Co. | Kissimmee, FL</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -16,11 +16,10 @@
 
   <header class="site-header" id="siteHeader">
     <nav class="nav">
-      <a class="nav-brand" href="index.html">
-  <span class="brand-top">DISTRICT</span>
-  <span class="brand-bottom">FADE CO.</span>
-</a>
-
+      <a class="nav-brand" href="index.html" aria-label="District Fade Co. Home">
+        <span class="brand-top">DISTRICT</span>
+        <span class="brand-bottom">FADE CO.</span>
+      </a>
 
       <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -38,10 +37,12 @@
 
   <main>
 
-    <section class="hero" aria-label="District Fade Co. hero">
+    <section class="hero" aria-label="District Fade Co. Hero">
       <div class="hero-inner">
         <p class="hero-eyebrow">Kissimmee, FL 34747</p>
-        <h1>Precision Fades. No Shortcuts.</h1>
+
+        <h1>PRECISION FADES. NO SHORTCUTS.</h1>
+
         <p class="hero-sub">
           Modern cuts, clean beards, and sharp lineups. Built for the district.
         </p>
@@ -50,95 +51,133 @@
           <a class="btn btn-primary" href="contact.html#book">Book Appointment</a>
           <a class="btn btn-ghost" href="gallery.html">View Our Work</a>
         </div>
-
-      
       </div>
     </section>
 
     <section class="quickbar">
-  <div class="container quickbar-inner">
-    <div class="quickbar-item">Walk-ins Welcome</div>
-    <div class="quickbar-item">Appointments Preferred</div>
-    <div class="quickbar-item">Kissimmee, FL 34747</div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2 class="section-title">Clean cuts. Sharper confidence.</h2>
-    <p class="section-lead">
-      District Fade Co. delivers modern fades, beard work, and lineups with a consistent finish every time.
-      Book in minutes and show up ready.
-    </p>
-
-    <div class="highlights">
-      <div class="highlight">
-        <h3>Modern Fades</h3>
-        <p class="muted">Skin, taper, burst, and everything in between.</p>
+      <div class="container quickbar-inner">
+        <div class="quickbar-item">Walk-ins Welcome</div>
+        <div class="quickbar-item">Appointments Preferred</div>
+        <div class="quickbar-item">Open 7 Days</div>
       </div>
-      <div class="highlight">
-        <h3>Beard Detail</h3>
-        <p class="muted">Clean lines, balanced shape, finished sharp.</p>
-      </div>
-      <div class="highlight">
-        <h3>Work You Can See</h3>
-        <p class="muted">Check the gallery for real results.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Clean cuts. Sharper confidence.</h2>
+        <p class="section-lead">
+          District Fade Co. delivers modern fades, beard work, and lineups with a consistent finish every time.
+          Book in minutes and show up ready.
+        </p>
+
+        <div class="highlights">
+          <div class="highlight">
+            <h3>Modern Fades</h3>
+            <p class="muted">Skin, taper, burst, and everything in between.</p>
+          </div>
+
+          <div class="highlight">
+            <h3>Beard Detail</h3>
+            <p class="muted">Clean lines, balanced shape, finished sharp.</p>
+          </div>
+
+          <div class="highlight">
+            <h3>Work You Can See</h3>
+            <p class="muted">Check the gallery for real results.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="section">
       <div class="container">
         <h2 class="section-title">Our Team</h2>
-       <p class="section-lead">
-  Skilled barbers. Clean finishes. Consistent results.
-  Every cut is intentional. Every lineup is crisp.
-</p>
-
+        <p class="section-lead">
+          Skilled barbers. Clean finishes. Consistent results. Every cut is intentional. Every lineup is crisp.
+        </p>
 
         <div class="grid team-grid">
-          <article class="card">
-            <div class="avatar"></div>
-            <h3>Marco</h3>
-            <p class="muted">Fades, tapers, and texture.</p>
+         <article class="card team-card">
+  <img class="avatar" src="images/marco.png" alt="Marco, barber at District Fade Co." />
+  <h3>Marco</h3>
+  <p class="muted">Fades, tapers, and texture.</p>
+</article>
+
           </article>
 
-          <article class="card">
-            <div class="avatar"></div>
-            <h3>Jay</h3>
-            <p class="muted">Beards, lineups, and sharp detail.</p>
-          </article>
+          <article class="card team-card">
+  <img class="avatar" src="images/jay.png" alt="Jay, barber at District Fade Co." />
+  <h3>Jay</h3>
+ <p class="muted">Beards, lineups, and sharp detail.</p>
+</article>
 
-          <article class="card">
-            <div class="avatar"></div>
-            <h3>Chris</h3>
-            <p class="muted">Classic cuts with modern edge.</p>
-          </article>
+          <article class="card team-card">
+  <img class="avatar" src="images/chris.png" alt="Chris, barber at District Fade Co." />
+  <h3>Chris</h3>
+   <p class="muted">Classic cuts with modern edge.</p>
+</article>
+
+        </div>
+      </div>
+    </section>
+
+   
+
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2 class="section-title">Fresh work, every day.</h2>
+            <p class="section-lead">
+              Check out recent fades, lineups, and beard transformations. Then book your spot.
+            </p>
+            <div class="split-actions">
+              <a class="btn btn-ghost" href="gallery.html">Open Gallery</a>
+              <a class="btn btn-primary" href="contact.html#book">Book Now</a>
+            </div>
+          </div>
+
+          <div class="preview-grid" aria-label="Gallery preview">
+            <div class="preview"></div>
+            <div class="preview"></div>
+            <div class="preview"></div>
+            <div class="preview"></div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="cta">
-  <div class="container cta-inner">
-    <div>
-      <h2>Book your next appointment.</h2>
-      <p class="muted">District Fade Co. serving Kissimmee, FL 34747.</p>
-    </div>
-    <div class="cta-actions">
-      <a class="btn btn-primary" href="contact.html#book">Book Appointment</a>
-      <a class="btn btn-ghost" href="gallery.html">View Our Work</a>
-    </div>
-  </div>
-</section>
+      <div class="container cta-inner">
+        <div>
+          <h2>Book your next appointment.</h2>
+          <p class="muted">District Fade Co. serving Kissimmee, FL 34747.</p>
+        </div>
 
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="contact.html#book">Book Appointment</a>
+          <a class="btn btn-ghost" href="services.html">View Services</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="footer-brand">DISTRICT FADE CO.</div>
+          <p class="muted">Kissimmee, FL 34747</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
 
   </main>
 
   <script src="script.js"></script>
-
-
-
 </body>
 </html>
