@@ -35,63 +35,68 @@
   </header>
 
   <main>
-
     <section class="page-hero">
       <div class="container">
         <p class="section-kicker">GET IN TOUCH</p>
-        <h1 class="page-title">Contact Us</h1>
-        <p class="page-lead">Questions, bookings, or walk-in inquiries — drop us a line.</p>
+        <h1 class="page-title">Contact</h1>
+        <p class="page-lead">Questions, bookings, or walk-in info. Send a message or check the map below.</p>
       </div>
     </section>
 
     <section class="section">
-      <div class="container">
+      <div class="container contact-grid">
 
-        <div class="contact-columns">
+        <div class="panel" id="book">
+          <h2>Send a Message</h2>
 
-          <div class="contact-form">
-            <h2>Send a Message</h2>
-            <form id="contactForm">
-              <label>
-                Your Name
-                <input type="text" name="name" required />
-              </label>
+          <form class="form">
+            <label>
+              Name
+              <input class="input" type="text" name="name" required />
+            </label>
 
-              <label>
-                Email Address
-                <input type="email" name="email" required />
-              </label>
+            <label>
+              Email
+              <input class="input" type="email" name="email" required />
+            </label>
 
-              <label>
-                Phone Number
-                <input type="tel" name="phone" />
-              </label>
+            <label>
+              Phone
+              <input class="input" type="tel" name="phone" />
+            </label>
 
-              <label>
-                Message
-                <textarea name="message" rows="5" required></textarea>
-              </label>
+            <label>
+              Message
+              <textarea class="textarea" name="message" required></textarea>
+            </label>
 
-              <button class="btn btn-primary" type="submit">Submit</button>
-            </form>
+            <button class="btn btn-primary" type="submit">Send</button>
+          </form>
+
+          <div class="mini-list">
+            <div class="mini-item"><span>Walk-ins</span><span>Welcome</span></div>
+            <div class="mini-item"><span>Appointments</span><span>Preferred</span></div>
+            <div class="mini-item"><span>Area</span><span>Kissimmee</span></div>
           </div>
-
-          <div class="contact-map">
-            <h2>Location</h2>
-            <!-- General Kissimmee map -->
-            <iframe
-              width="100%"
-              height="280"
-              frameborder="0"
-              style="border:0"
-              loading="lazy"
-              allowfullscreen
-              src="https://www.google.com/maps/embed/v1/place?q=Kissimmee+FL+34747&key=YOUR_API_KEY">
-            </iframe>
-            <p class="muted">Serving Kissimmee, FL and surrounding areas.</p>
-          </div>
-
         </div>
+
+        <div class="panel">
+          <h2>Location</h2>
+
+          <div class="map">
+            <iframe
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Kissimmee,FL&z=12&output=embed"
+              title="Map of Kissimmee, Florida">
+            </iframe>
+          </div>
+
+          <p class="muted" style="margin-top:12px;">
+            Serving Kissimmee and surrounding areas.
+          </p>
+        </div>
+
       </div>
     </section>
 
@@ -101,14 +106,14 @@
           <div class="footer-brand">DISTRICT FADE CO.</div>
           <p class="muted">Kissimmee, FL 34747</p>
         </div>
+
         <div class="footer-links">
-          <a href="index.html">Home</a>
           <a href="services.html">Services</a>
           <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
         </div>
       </div>
     </footer>
-
   </main>
 
   <script src="script.js"></script>

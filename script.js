@@ -67,3 +67,4 @@ if (lightboxClose) lightboxClose.addEventListener("click", closeLightbox);
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeLightbox();
 });
+
