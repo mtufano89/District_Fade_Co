@@ -456,3 +456,110 @@ a{color:inherit;text-decoration:none}
   .team-grid{ grid-template-columns: 1fr; }
   .quickbar-inner{ grid-template-columns: 1fr; }
 }
+
+
+/*****Gallery*******/
+
+.page-hero{
+  padding:120px 0 40px 0;
+  border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(900px 420px at 12% 20%, rgba(177,18,38,.14), transparent 60%),
+    rgba(0,0,0,.25);
+}
+
+.page-title{
+  font-family:"Bebas Neue", Inter, system-ui, sans-serif;
+  margin:0 0 10px 0;
+  font-size:64px;
+  letter-spacing:.04em;
+}
+
+.page-lead{
+  margin:0;
+  color:var(--muted);
+  max-width:70ch;
+}
+
+.section-gallery-grid{
+  background: linear-gradient(to bottom, rgba(255,255,255,.02), transparent 60%);
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:12px;
+}
+
+.shot{
+  padding:0;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:16px;
+  background:rgba(255,255,255,.04);
+  overflow:hidden;
+  cursor:pointer;
+  transition: transform .16s ease, border-color .16s ease, background .16s ease;
+}
+
+.shot:hover{
+  transform: translateY(-2px);
+  border-color:rgba(255,255,255,.18);
+  background:rgba(255,255,255,.06);
+}
+
+.shot img{
+  display:block;
+  width:100%;
+  height:100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+@media (max-width: 1000px){
+  .gallery-grid{ grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 720px){
+  .gallery-grid{ grid-template-columns: repeat(2, 1fr); }
+  .page-title{ font-size:52px; }
+}
+
+/* Lightbox */
+.lightbox{
+  position:fixed;
+  inset:0;
+  display:none;
+  place-items:center;
+  background:rgba(0,0,0,.82);
+  backdrop-filter: blur(10px);
+  z-index:2000;
+  padding:18px;
+}
+
+.lightbox.open{
+  display:grid;
+}
+
+.lightbox-img{
+  max-width:min(980px, 100%);
+  max-height:80vh;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.14);
+  box-shadow:0 18px 60px rgba(0,0,0,.6);
+}
+
+.lightbox-close{
+  position:absolute;
+  top:14px;
+  right:14px;
+  width:44px;
+  height:44px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.06);
+  cursor:pointer;
+}
+
+.lightbox-close:hover{
+  background:rgba(255,255,255,.10);
+}

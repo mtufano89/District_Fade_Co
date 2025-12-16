@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | District Fade Co.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header" id="siteHeader">
+    <nav class="nav">
+      <a class="nav-brand" href="index.html" aria-label="District Fade Co. Home">
+        <span class="brand-top">DISTRICT</span>
+        <span class="brand-bottom">FADE CO.</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-primary" href="contact.html#book">Book Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-kicker">RECENT WORK</p>
+        <h1 class="page-title">Gallery</h1>
+        <p class="page-lead">Fades, lineups, and beard work from the shop. Tap any photo to view.</p>
+      </div>
+    </section>
+
+    <section class="section section-gallery-grid">
+      <div class="container">
+        <div class="gallery-grid">
+          <!-- Update or extend these as you add photos -->
+          <button class="shot" data-full="images/gallery/g1.jpg" aria-label="Open photo 1">
+            <img src="images/haircut_1.jpg" alt="Haircut photo 1" loading="lazy" />
+          </button>
+
+          <button class="shot" data-full="images/gallery/g2.jpg" aria-label="Open photo 2">
+            <img src="images/haircut_13.jpg" alt="Haircut photo 2" loading="lazy" />
+          </button>
+
+          <button class="shot" data-full="images/gallery/g3.jpg" aria-label="Open photo 3">
+            <img src="images/haircut_4.jpg" alt="Haircut photo 3" loading="lazy" />
+          </button>
+
+          <button class="shot" data-full="images/gallery/g4.jpg" aria-label="Open photo 4">
+            <img src="images/haircut_14.png" alt="Haircut photo 4" loading="lazy" />
+          </button>
+
+          <button class="shot" data-full="images/gallery/g5.jpg" aria-label="Open photo 5">
+            <img src="images/haircut_5.jpg" alt="Haircut photo 5" loading="lazy" />
+          </button>
+
+          <button class="shot" data-full="images/gallery/g6.jpg" aria-label="Open photo 6">
+            <img src="images/haircut_6.png" alt="Haircut photo 6" loading="lazy" />
+          </button>
+
+          <button class="shot" data-full="images/gallery/g7.jpg" aria-label="Open photo 7">
+            <img src="images/haircut_7.jpg" alt="Haircut photo 7" loading="lazy" />
+          </button>
+
+          <button class="shot" data-full="images/gallery/g8.jpg" aria-label="Open photo 8">
+            <img src="images/haircut_8.jpeg" alt="Haircut photo 8" loading="lazy" />
+          </button>
+
+          <button class="shot" data-full="images/gallery/g9.jpg" aria-label="Open photo 9">
+            <img src="images/haircut_9.jpg" alt="Haircut photo 9" loading="lazy" />
+          </button>
+
+          <button class="shot" data-full="images/gallery/g10.jpg" aria-label="Open photo 10">
+            <img src="images/haircut_10.jpg" alt="Haircut photo 10" loading="lazy" />
+          </button>
+
+          <button class="shot" data-full="images/gallery/g11.jpg" aria-label="Open photo 11">
+            <img src="images/haircut_11.jpg" alt="Haircut photo 11" loading="lazy" />
+          </button>
+
+          <button class="shot" data-full="images/gallery/g12.jpg" aria-label="Open photo 12">
+            <img src="images/haircut_12.jpg" alt="Haircut photo 12" loading="lazy" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="footer-brand">DISTRICT FADE CO.</div>
+          <p class="muted">Kissimmee, FL 34747</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close"></button>
+      <img class="lightbox-img" id="lightboxImg" alt="" />
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

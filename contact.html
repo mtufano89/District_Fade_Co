@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | District Fade Co.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav">
+      <a class="nav-brand" href="index.html" aria-label="District Fade Co. Home">
+        <span class="brand-top">DISTRICT</span>
+        <span class="brand-bottom">FADE CO.</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a class="btn btn-primary" href="#book">Book Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-kicker">GET IN TOUCH</p>
+        <h1 class="page-title">Contact Us</h1>
+        <p class="page-lead">Questions, bookings, or walk-in inquiries — drop us a line.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="contact-columns">
+
+          <div class="contact-form">
+            <h2>Send a Message</h2>
+            <form id="contactForm">
+              <label>
+                Your Name
+                <input type="text" name="name" required />
+              </label>
+
+              <label>
+                Email Address
+                <input type="email" name="email" required />
+              </label>
+
+              <label>
+                Phone Number
+                <input type="tel" name="phone" />
+              </label>
+
+              <label>
+                Message
+                <textarea name="message" rows="5" required></textarea>
+              </label>
+
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+          </div>
+
+          <div class="contact-map">
+            <h2>Location</h2>
+            <!-- General Kissimmee map -->
+            <iframe
+              width="100%"
+              height="280"
+              frameborder="0"
+              style="border:0"
+              loading="lazy"
+              allowfullscreen
+              src="https://www.google.com/maps/embed/v1/place?q=Kissimmee+FL+34747&key=YOUR_API_KEY">
+            </iframe>
+            <p class="muted">Serving Kissimmee, FL and surrounding areas.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="footer-brand">DISTRICT FADE CO.</div>
+          <p class="muted">Kissimmee, FL 34747</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
