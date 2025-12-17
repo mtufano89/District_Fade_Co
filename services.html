@@ -11,8 +11,8 @@
 
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
+<body>
   <header class="site-header" id="siteHeader">
     <nav class="nav">
       <a class="nav-brand" href="index.html" aria-label="District Fade Co. Home">
@@ -37,56 +37,119 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <p class="section-kicker">OUR SERVICES</p>
-        <h1 class="page-title">Pricing & Services</h1>
-        <p class="page-lead">Clear, competitive pricing based on local barbershop standards in Kissimmee.</p>
+        <p class="section-kicker">SERVICES</p>
+        <h1 class="page-title">Pricing</h1>
+        <p class="page-lead">Straightforward pricing, clean work, consistent results.</p>
       </div>
     </section>
 
-    <section class="section section-services">
-      <div class="container">
+ <div class="services-top services-top-centered">
+  <div class="services-intro">
+    <h2 class="section-title"></h2>
+    <p class="section-lead"></p>
+  </div>
+
+  <div class="service-panel service-panel-wide">
+    <p class="service-panel-kicker">BOOKING</p>
+    <p class="service-panel-title">Ready when you are.</p>
+    <p class="muted">Tap below to request a time.</p>
+
+    <div class="service-panel-actions">
+      <a class="btn btn-primary" href="contact.html#book">Book Appointment</a>
+      <a class="btn btn-ghost" href="contact.html#book">Request a Time</a>
+    </div>
+
+    <div class="mini-list">
+      <div class="mini-item"><span>Walk ins</span><span>Welcome</span></div>
+      <div class="mini-item"><span>Appointments</span><span>Preferred</span></div>
+      <div class="mini-item"><span>Hours</span><span>7 Days</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="services-divider"></div>
+
+
         <div class="pricing-grid">
 
-          <div class="service-card">
-            <h3>Classic Haircut</h3>
-            <p class="price">$30</p>
-            <p class="muted">Standard precision haircut tailored to your style.</p>
-          </div>
+          <article class="price-card">
+            <div class="price-head">
+              <h3>Classic Haircut</h3>
+              <span class="badge">Most Popular</span>
+            </div>
+            <div class="price-row">
+              <div class="price">$40</div>
+              <div class="duration">30 to 40 min</div>
+            </div>
+            <p class="muted">Clean cut with a consistent finish. Any length, any style.</p>
+          </article>
 
-          <div class="service-card">
-            <h3>Skin Fade / Advanced Cut</h3>
-            <p class="price">$35</p>
-            <p class="muted">Detailed fade or high-skill haircut with precision blending.</p>
-          </div>
+          <article class="price-card">
+            <div class="price-head">
+              <h3>Skin Fade / Advanced Cut</h3>
+              <span class="badge badge-ghost">Precision</span>
+            </div>
+            <div class="price-row">
+              <div class="price">$55</div>
+              <div class="duration">35 to 45 min</div>
+            </div>
+            <p class="muted">Detailed fade work and blending. Sharp lines, smooth transition.</p>
+          </article>
 
-          <div class="service-card">
-            <h3>Haircut + Beard Trim</h3>
-            <p class="price">$45</p>
-            <p class="muted">Complete look with beard shaping and neckline cleanup.</p>
-          </div>
+          <article class="price-card featured">
+            <div class="price-head">
+              <h3>Haircut + Beard Trim</h3>
+              <span class="badge">Best Value</span>
+            </div>
+            <div class="price-row">
+              <div class="price">$60</div>
+              <div class="duration">45 to 60 min</div>
+            </div>
+            <p class="muted">Full reset. Haircut plus beard shape, lineup, and neckline cleanup.</p>
+          </article>
 
-          <div class="service-card">
-            <h3>Beard Trim Only</h3>
-            <p class="price">$20</p>
-            <p class="muted">Sharp beard trim and shaping.</p>
-          </div>
+          <article class="price-card">
+            <div class="price-head">
+              <h3>Beard Trim Only</h3>
+              <span class="badge badge-ghost">Detail</span>
+            </div>
+            <div class="price-row">
+              <div class="price">$25</div>
+              <div class="duration">20 to 30 min</div>
+            </div>
+            <p class="muted">Shape, lineup, and clean edges. Keep it sharp between cuts.</p>
+          </article>
 
-          <div class="service-card">
-            <h3>Straight Razor Shave</h3>
-            <p class="price">$30</p>
-            <p class="muted">Classic shavedown with hot towel service.</p>
-          </div>
+          <article class="price-card">
+            <div class="price-head">
+              <h3>Straight Razor Shave</h3>
+              <span class="badge badge-ghost">Classic</span>
+            </div>
+            <div class="price-row">
+              <div class="price">$40</div>
+              <div class="duration">30 to 40 min</div>
+            </div>
+            <p class="muted">Hot towel finish with a clean, classic shave.</p>
+          </article>
 
-          <div class="service-card">
-            <h3>Kids' Haircut (12 & Under)</h3>
-            <p class="price">$30</p>
-            <p class="muted">Detailed cut for children.</p>
-          </div>
+          <article class="price-card">
+            <div class="price-head">
+              <h3>Kids Haircut (12 & Under)</h3>
+              <span class="badge badge-ghost">Family</span>
+            </div>
+            <div class="price-row">
+              <div class="price">$30</div>
+              <div class="duration">25 to 35 min</div>
+            </div>
+            <p class="muted">Clean and comfortable cut for kids. Quick and sharp.</p>
+          </article>
 
         </div>
+
         <p class="service-note">
-          * Prices may vary slightly based on stylist experience and complexity of service.
+          Prices may vary slightly based on complexity. If you are not sure, book and we will confirm at the chair.
         </p>
+
       </div>
     </section>
 
@@ -96,15 +159,14 @@
           <div class="footer-brand">DISTRICT FADE CO.</div>
           <p class="muted">Kissimmee, FL 34747</p>
         </div>
+
         <div class="footer-links">
-          <a href="index.html">Home</a>
           <a href="services.html">Services</a>
           <a href="gallery.html">Gallery</a>
           <a href="contact.html">Contact</a>
         </div>
       </div>
     </footer>
-
   </main>
 
   <script src="script.js"></script>
