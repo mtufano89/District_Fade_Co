@@ -3,24 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services & Pricing | District Fade Co.</title>
+  <title>Services | District Fade Co.</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
   <header class="site-header" id="siteHeader">
-    <nav class="nav">
+    <nav class="nav" aria-label="Primary navigation">
       <a class="nav-brand" href="index.html" aria-label="District Fade Co. Home">
         <span class="brand-top">DISTRICT</span>
         <span class="brand-bottom">FADE CO.</span>
       </a>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
         <span></span><span></span><span></span>
       </button>
 
@@ -38,44 +44,38 @@
     <section class="page-hero">
       <div class="container">
         <p class="section-kicker">SERVICES</p>
-        <h1 class="page-title">Pricing</h1>
+        <h1 class="page-title">Services</h1>
         <p class="page-lead">Straightforward pricing, clean work, consistent results.</p>
       </div>
     </section>
 
- <div class="services-top services-top-centered">
-  <div class="services-intro">
-    <h2 class="section-title"></h2>
-    <p class="section-lead"></p>
-  </div>
+    <section class="section section-services">
+      <div class="container">
 
-  <div class="service-panel service-panel-wide">
-    <p class="service-panel-kicker">BOOKING</p>
-    <p class="service-panel-title">Ready when you are.</p>
-    <p class="muted">Tap below to request a time.</p>
+        <div class="services-top-centered">
+          <div class="service-panel service-panel-wide">
+            <p class="service-panel-kicker">BOOKING</p>
+            <h2 class="service-panel-title">Ready when you are</h2>
+            <p class="muted">Walk-ins welcome. Appointments preferred. Tap below to book.</p>
 
-    <div class="service-panel-actions">
-      <a class="btn btn-primary" href="contact.html#book">Book Appointment</a>
-      <a class="btn btn-ghost" href="contact.html#book">Request a Time</a>
-    </div>
+            <div class="service-panel-actions">
+              <a class="btn btn-primary" href="contact.html#book">Book Appointment</a>
+              <a class="btn btn-ghost" href="gallery.html">View Our Work</a>
+            </div>
 
-    <div class="mini-list">
-      <div class="mini-item"><span>Walk ins</span><span>Welcome</span></div>
-      <div class="mini-item"><span>Appointments</span><span>Preferred</span></div>
-      <div class="mini-item"><span>Hours</span><span>7 Days</span></div>
-    </div>
-  </div>
-</div>
-
-<div class="services-divider"></div>
-
+            <div class="mini-list">
+              <div class="mini-item"><span>Walk-ins</span><span>Welcome</span></div>
+              <div class="mini-item"><span>Appointments</span><span>Preferred</span></div>
+              <div class="mini-item"><span>Open</span><span>7 days</span></div>
+            </div>
+          </div>
+        </div>
 
         <div class="pricing-grid">
-
-          <article class="price-card">
+          <article class="price-card featured">
             <div class="price-head">
               <h3>Classic Haircut</h3>
-              <span class="badge">Most Popular</span>
+              <span class="badge">Most popular</span>
             </div>
             <div class="price-row">
               <div class="price">$40</div>
@@ -96,28 +96,28 @@
             <p class="muted">Detailed fade work and blending. Sharp lines, smooth transition.</p>
           </article>
 
-          <article class="price-card featured">
+          <article class="price-card">
             <div class="price-head">
-              <h3>Haircut + Beard Trim</h3>
-              <span class="badge">Best Value</span>
+              <h3>Haircut + Beard</h3>
+              <span class="badge badge-ghost">Best value</span>
             </div>
             <div class="price-row">
               <div class="price">$60</div>
               <div class="duration">45 to 60 min</div>
             </div>
-            <p class="muted">Full reset. Haircut plus beard shape, lineup, and neckline cleanup.</p>
+            <p class="muted">Full reset. Haircut plus beard shape, lineup, and cleanup.</p>
           </article>
 
           <article class="price-card">
             <div class="price-head">
-              <h3>Beard Trim Only</h3>
+              <h3>Beard Trim</h3>
               <span class="badge badge-ghost">Detail</span>
             </div>
             <div class="price-row">
               <div class="price">$25</div>
               <div class="duration">20 to 30 min</div>
             </div>
-            <p class="muted">Shape, lineup, and clean edges. Keep it sharp between cuts.</p>
+            <p class="muted">Shape, lineup, and clean edges between cuts.</p>
           </article>
 
           <article class="price-card">
@@ -134,8 +134,8 @@
 
           <article class="price-card">
             <div class="price-head">
-              <h3>Kids Haircut (12 & Under)</h3>
-              <span class="badge badge-ghost">Family</span>
+              <h3>Kids Haircut</h3>
+              <span class="badge badge-ghost">12 & under</span>
             </div>
             <div class="price-row">
               <div class="price">$30</div>
@@ -143,13 +143,9 @@
             </div>
             <p class="muted">Clean and comfortable cut for kids. Quick and sharp.</p>
           </article>
-
         </div>
 
-        <p class="service-note">
-          Prices may vary slightly based on complexity. If you are not sure, book and we will confirm at the chair.
-        </p>
-
+        <p class="service-note">Prices shown are sample portfolio pricing. Replace with real shop pricing when going live.</p>
       </div>
     </section>
 

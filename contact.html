@@ -9,18 +9,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
   <header class="site-header" id="siteHeader">
-    <nav class="nav">
+    <nav class="nav" aria-label="Primary navigation">
       <a class="nav-brand" href="index.html" aria-label="District Fade Co. Home">
         <span class="brand-top">DISTRICT</span>
         <span class="brand-bottom">FADE CO.</span>
       </a>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
         <span></span><span></span><span></span>
       </button>
 
@@ -45,7 +51,6 @@
 
     <section class="section">
       <div class="container contact-grid">
-
         <div class="panel" id="book">
           <h2>Send a Message</h2>
 
@@ -96,7 +101,6 @@
             Serving Kissimmee and surrounding areas.
           </p>
         </div>
-
       </div>
     </section>
 
